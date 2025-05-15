@@ -1,14 +1,10 @@
 'use client';
-import type { NextPage } from 'next';
+
 import Head from 'next/head';
-import { useState } from 'react';
 import CalendarViewer from '@/components/CalendarViewer';
 
-const Home: NextPage = () => {
-  // Replace this with your Google Calendar iframe URL
-  const [calendarUrl, setCalendarUrl] = useState(
-    'https://calendar.google.com/calendar/embed?src=example%40gmail.com'
-  );
+export default function Home() {
+  const calendarUrl = "https://calendar.google.com/calendar/u/0/embed?src=g.swu.ac.th_clnth781upbha7ovo03n38iksk@group.calendar.google.com&ctz=Asia/Bangkok&pli=1";
 
   return (
     <div className="container">
@@ -72,5 +68,3 @@ const Home: NextPage = () => {
     </div>
   );
 };
-
-export default Home;
